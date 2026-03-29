@@ -5,4 +5,10 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://northarray.github.io',
                 'git_url': 'https://github.com/northarray/chat',
                 'lib_path': 'chat'},
-  'syms': {'chat.core': {'chat.core.foo': ('core.html#foo', 'chat/core.py')}}}
+  'syms': { 'chat.chat': { 'chat.chat.ask_llm': ('core.html#ask_llm', 'chat/chat.py'),
+                           'chat.chat.bubble': ('core.html#bubble', 'chat/chat.py'),
+                           'chat.chat.chatpg': ('core.html#chatpg', 'chat/chat.py'),
+                           'chat.chat.llm_rsp': ('core.html#llm_rsp', 'chat/chat.py'),
+                           'chat.chat.mk_prompt': ('core.html#mk_prompt', 'chat/chat.py'),
+                           'chat.chat.send': ('core.html#send', 'chat/chat.py')},
+            'chat.core': {'chat.core.foo': ('core.html#foo', 'chat/core.py')}}}
