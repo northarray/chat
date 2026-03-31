@@ -11,4 +11,5 @@ d = { 'settings': { 'branch': 'main',
                            'chat.chat.llm_rsp': ('core.html#llm_rsp', 'chat/chat.py'),
                            'chat.chat.mk_prompt': ('core.html#mk_prompt', 'chat/chat.py'),
                            'chat.chat.send': ('core.html#send', 'chat/chat.py')},
-            'chat.core': {'chat.core.foo': ('core.html#foo', 'chat/core.py')}}}
+            'chat.core': {'chat.core.foo': ('core.html#foo', 'chat/core.py')},
+            'chat.run': {}}}
