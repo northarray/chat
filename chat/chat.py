@@ -7,8 +7,15 @@ __all__ = ['app', 'rt', 'sysp', 'h', 'js', 'MsgType', 'bubble', 'mk_prompt', 'as
 from fasthtml.common import *
 from lisette import *
 
-# %% ../nbs/core.ipynb #0508b4be
-app = FastHTML(hdrs=(Link(href='https://cdn.jsdelivr.net/npm/daisyui@5', rel='stylesheet', type='text/css'), Script(src='https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4'), Link(href='https://cdn.jsdelivr.net/npm/daisyui@5/themes.css', rel='stylesheet', type='text/css')))
+# %% ../nbs/core.ipynb #8a66281e
+app = FastHTML(hdrs=(
+        Link(href='https://cdn.jsdelivr.net/npm/daisyui@5', rel='stylesheet', type='text/css'),
+        Link(href='https://cdn.jsdelivr.net/npm/daisyui@5/themes.css', rel='stylesheet', type='text/css'),
+        Script(src='https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4'),
+        Link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/@tailwindcss/typography/dist/typography.min.css'),
+        MarkdownJS(),
+        ),
+    )
 
 # %% ../nbs/core.ipynb #0153eebc
 # For convenience
@@ -23,14 +30,14 @@ class MsgType(enum.StrEnum):
     prompt = 'Prompt'
     ai = 'AI'
 
-# %% ../nbs/core.ipynb #fe87207d
+# %% ../nbs/core.ipynb #a2edb8ec
 def bubble(msg:str, msg_type:MsgType=MsgType.prompt):
     if msg_type == MsgType.ai:
-        return Div(Div(msg, cls='chat-bubble chat-bubble-secondary'), cls='chat chat-end')
+        return Div(Div(msg, cls='chat-bubble chat-bubble-secondary marked prose'), cls='chat chat-end')
     elif msg_type == MsgType.prompt:
         return Div(Div(msg, cls='chat-bubble chat-bubble-primary'), cls='chat chat-start')
     else:
-        return Div(Div(msg, cls='chat-bubble chat-bubble-warning'), cls='chat chat-start')
+        return Div(Div(msg, cls='chat-bubble chat-bubble-warning marked prose'), cls='chat chat-start')
 
 # %% ../nbs/core.ipynb #464f0850
 def mk_prompt(msg, h):
