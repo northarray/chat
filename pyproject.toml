@@ -15,7 +15,10 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
 ]
-dependencies = []
+dependencies = [
+    "lisette>=0.1.9",
+    "python-fasthtml>=0.13.2",
+]
 
 [project.urls]
 Repository = "https://github.com/northarray/chat"
