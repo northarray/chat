@@ -2,4 +2,5 @@ website:
   sidebar:
     contents:
       - index.ipynb
-      - core.ipynb
+      - chat.ipynb
+      - main.ipynb
