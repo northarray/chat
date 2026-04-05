@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "chat.html",
+    "href": "chat.html",
+    "title": "A chat app interface",
+    "section": "",
+    "text": "source\n\n\n\ndef Dialog(\n    args:VAR_POSITIONAL, kwargs:VAR_KEYWORD\n):\n\nInitialize self. See help(type(self)) for accurate signature.\n\nsource\n\n\n\n\ndef AppState(\n    uid:int=123, h:list=&lt;factory&gt;, dlgid:int=&lt;factory&gt;, dlgname:str=&lt;factory&gt;, model:str='claude-haiku-4-5'\n)-&gt;None:",
+    "crumbs": [
+      "A chat app interface"
+    ]
+  },
+  {
+    "objectID": "chat.html#app-state-and-db",
+    "href": "chat.html#app-state-and-db",
+    "title": "A chat app interface",
+    "section": "",
+    "text": "source\n\n\n\ndef Dialog(\n    args:VAR_POSITIONAL, kwargs:VAR_KEYWORD\n):\n\nInitialize self. See help(type(self)) for accurate signature.\n\nsource\n\n\n\n\ndef AppState(\n    uid:int=123, h:list=&lt;factory&gt;, dlgid:int=&lt;factory&gt;, dlgname:str=&lt;factory&gt;, model:str='claude-haiku-4-5'\n)-&gt;None:",
+    "crumbs": [
+      "A chat app interface"
+    ]
+  },
+  {
+    "objectID": "chat.html#chat-with-llm",
+    "href": "chat.html#chat-with-llm",
+    "title": "A chat app interface",
+    "section": "Chat with llm",
+    "text": "Chat with llm\n\nsource\n\nbubble\n\ndef bubble(\n    msg:str, msg_type:MsgType=&lt;MsgType.prompt: 'Prompt'&gt;\n):\n\nCall self as a function.\n\ncontent = \"\"\"\nHere are some _markdown_ elements.\n\n- This is a list item\n- This is another list item\n- And this is a third list item\n\n**Fenced code blocks work here.**\n\n## A title\nHere is some text!\n### Another title\n\n\"\"\"\n\n\n#bubble(content, MsgType.note)\n\n\n#bubble(\"Can you help?\")\n\n\nsource\n\n\nmk_prompt\n\ndef mk_prompt(\n    msg, h\n):\n\nCall self as a function.\n\nmk_prompt(\"Hello\", [\"Old message\"])\n\n'Past messages: [\"Old message\"]\\n\\nCurrent question: Hello'\n\n\n\nsource\n\n\nsetmodel\n\ndef setmodel(\n    name:str\n):\n\nCall self as a function.\n\nsource\n\n\nmodeldropdown\n\ndef modeldropdown(\n    \n):\n\nCall self as a function.\n\nsource\n\n\nllm_rsp\n\ndef llm_rsp(\n    msg\n):\n\nCall self as a function.\n\nsource\n\n\nask_llm\n\ndef ask_llm(\n    msg:str\n):\n\nCall self as a function.\n\nsource\n\n\nsend\n\ndef send(\n    msg:str, msg_type:str\n):\n\nCall self as a function.\n\nsource\n\n\nupdate_h\n\ndef update_h(\n    content:str, author:MsgType\n):\n\nCall self as a function.\n\nsource\n\n\nload_dialog\n\ndef load_dialog(\n    dlgid:int\n):\n\nCall self as a function.\n\nsource\n\n\ndlgdropdown\n\ndef dlgdropdown(\n    \n):\n\nCall self as a function.\n\nsource\n\n\nchatpg\n\ndef chatpg(\n    \n):\n\nCall self as a function.",
+    "crumbs": [
+      "A chat app interface"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "chat",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.",
+    "crumbs": [
+      "chat"
+    ]
+  },
+  {
+    "objectID": "index.html#developer-guide",
+    "href": "index.html#developer-guide",
+    "title": "chat",
+    "section": "Developer Guide",
+    "text": "Developer Guide\nIf you are new to using nbdev here are some useful pointers to get you started.\n\nInstall chat in Development mode\n# make sure chat package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to chat\n$ nbdev_prepare",
+    "crumbs": [
+      "chat"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "chat",
+    "section": "Usage",
+    "text": "Usage\n\nInstallation\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/northarray/chat.git\nor from conda\n$ conda install -c northarray chat\nor from pypi\n$ pip install chat\n\n\nDocumentation\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively.",
+    "crumbs": [
+      "chat"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "chat",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2",
+    "crumbs": [
+      "chat"
+    ]
+  }
+]
