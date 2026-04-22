@@ -18,6 +18,7 @@ classifiers = [
 dependencies = [
     "lisette>=0.1.9",
     "python-fasthtml>=0.13.2",
+    "fastlucide>=0.0.6"
 ]
 
 [project.urls]
